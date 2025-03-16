@@ -85,7 +85,7 @@ face_detector = mp_face.FaceDetection(min_detection_confidence=0.5)
 model = YOLO("yolov8n.pt") if torch else None
 
 root = tk.Tk()
-root.title("Hand-, Alter- und Objekterkennung")
+root.title("Object Scanner")
 lbl_video = Label(root)
 lbl_video.pack()
 process_frame()
